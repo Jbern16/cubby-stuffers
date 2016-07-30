@@ -1,3 +1,10 @@
+@mixin background-image-spec {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 body,
 html {
     width: 100%;
@@ -8,6 +15,7 @@ body,
 {
     font-weight: 700;
 }
+
 
 .nav {
     font-size: 14px; 
@@ -23,12 +31,12 @@ body,
 }
 
 .intro-header {
-    padding-top: 50px; 
-    padding-bottom: 50px;
+    margin-top: -5%;
     text-align: center;
     color: #f8f8f8;
-    background: url(image-path('oreos.jpg')) no-repeat center center;
-    background-size: cover;
+    @include background-image-spec;
+    min-height: 100vh;
+    background-image: url(image-path('oreos.jpg'));
 }
 
 .intro-message {
