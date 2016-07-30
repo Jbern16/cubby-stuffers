@@ -1,9 +1,4 @@
-@mixin background-image-spec {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
+@import "mixins";
 
 body,
 html {
@@ -15,7 +10,6 @@ body,
 {
     font-weight: 700;
 }
-
 
 .nav {
     font-size: 14px; 
